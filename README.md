@@ -2,25 +2,19 @@
 
 * [Alpine Linux Packages](https://pkgs.alpinelinux.org/packages)
 
-## Docker
+## Install
 
 ```
 $ ./docker-install.sh
-```
-
-```
-$ docker build -t alpine .
-$ docker run -it --rm alpine
+$ sudo pip install docker-compose
 ```
 
 ```
 $ sbt assembly
-$ docker run -v `pwd`/target:/mnt --rm alpine java -jar /mnt/scala-2.11/test-assembly-1.0.jar
 ```
 
-## Docker Compose
+## Up
 
 ```
-$ sudo pip install docker-compose
 $ docker-compose up
 ```

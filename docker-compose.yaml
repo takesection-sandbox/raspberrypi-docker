@@ -1,8 +1,8 @@
-version: "2"
+version: "3"
 services:
   scala_test:
     build: .
-    image: alpine
+    image: scala-test
     volumes:
-      - ./target:/mnt
-    entrypoint: java -jar /mnt/scala-2.11/test-assembly-1.0.jar
+      - .:/mnt
+    entrypoint: java -jar /mnt/target/scala-2.11/test-assembly-1.0.jar
