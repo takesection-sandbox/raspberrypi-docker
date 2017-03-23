@@ -1,6 +1,6 @@
 version: "3"
 services:
-  scala_test:
+  scala-test:
     build: .
     image: scala-test
     volumes:
